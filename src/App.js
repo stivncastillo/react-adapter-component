@@ -1,14 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
 import { Button } from './components'
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <>
-        <Button variant="primary">Elemento</Button>
-      </>
+      <Button library="antd" variant="primary" onClick={() => console.log('putito')}>Elemento</Button>
+      <Button variant="primary" onClick={() => console.log('putito')}>Elemento</Button>
     </div>
   );
 }
